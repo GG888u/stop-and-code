@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="color">
+   
+    <div>
+
+    </div>
+
+
+       <div>
+           <label for="colore">rosso</label>
+           <input type="radio" id="red" name="color"/>
+       </div>
+
+       <div>
+           <label for="colore">blu</label>
+           <input type="radio" id="blue" name="color" />
+       </div>
+       <div>
+            <label for="colore">verde</label>
+            <input type="radio" id="green" name="color"   />
+       </div>
+
+       
+   
+     <script>
+        
+        var inputTag = document.getElementById('red');
+                inputTag.onchange = function(){   //evento onchange per color
+
+                  bodyTag = document.body;
+                  console.log(bodyTag.style);
+
+                  bodyTag.style.cssText = "background-color:red" ;
+
+                }  
+
+
+
+        var inputTag = document.getElementById("blue");
+              inputTag.onchange = function(){
+
+                bodyTag = document.body;
+                console.log(bodyTag.style);
+
+                bodyTag.style.cssText = 'background-color:blue';
+              }
+
+
+        var inputTag = document.getElementById('green');
+             inputTag.onchange = function(){
+
+                bodyTag = document.body;
+                console.log(bodyTag.style);
+
+                bodyTag.style.cssText = 'background-color:green';
+             }      
+
+
+     </script>
+    </body>
+</html>
